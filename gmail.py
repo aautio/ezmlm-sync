@@ -24,6 +24,6 @@ class Inbox(object):
             print 'Yielding fetched msg'
             yield email.message_from_string(data[0][1])
 
-        print 'No more unread messages, closing'
+        print 'No more unread emails'
         imap.close()
         imap.logout()
