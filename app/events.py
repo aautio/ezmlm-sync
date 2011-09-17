@@ -1,28 +1,27 @@
 
-events = (ListEvent(), ConfirmSubscribeEvent(), ConfirmUnsubscribeEvent())
-
 class ListEvent(object):
-    def matches(email):
+    def matches(self, email):
         return False
 
-    def handle(email):
+    def handle(self, email):
         # fetch url resource, compare and alter subscriptions
         pass
 
 
 class ConfirmSubscribeEvent(object):
-    def matches(email):
+    def matches(self, email):
         return False
 
-    def handle(email):
+    def handle(self, email):
         # respond with confirmation email
         pass
 
 class ConfirmUnsubscribeEvent(object):
-    def matches(email):
+    def matches(self, email):
         return False
 
-    def handle(email):
+    def handle(self, email):
         # respond with confirmation email
         pass
     
+events = (ListEvent(), ConfirmSubscribeEvent(), ConfirmUnsubscribeEvent())
