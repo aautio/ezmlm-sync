@@ -1,14 +1,15 @@
 import queue
+import events
 
-def to_event(email):
-    pass
+def consume(email):
+    for event in events.events:
+        if event.matches(email):
+            # event.handle(email)
+            return True
+    return False
 
 def listen_and_transform():
     for email in queue.messages('emails:unread'):
-        channel, message = to_event(email)
-
-        if channel and message:
-            queue.publish(channel, message)
-        else:
+        if not consume(email):
             # TODO: mail the message to admin?
             print 'Email not understood: /n%s' % email
