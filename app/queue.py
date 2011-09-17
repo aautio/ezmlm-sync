@@ -11,4 +11,4 @@ def messages(channel):
     p = r().pubsub()
     p.subscribe(channel)
     for message in p.listen():
-        yield message
+        yield message['data']
