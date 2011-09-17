@@ -1,8 +1,9 @@
 import urllib2
 import utils
 import queue
+from settings import web_resource_url as url
 
-def poll_resource(url):
+def poll():
     emails, errors = fetch_and_split(url)
 
     if errors:
