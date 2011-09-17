@@ -1,3 +1,3 @@
-from tests import confirm_subscribe
+from tests import event_matches
 
-confirm_subscribe.run()
+event_matches.run()
