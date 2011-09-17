@@ -19,7 +19,7 @@ def split_with_condition(iter, condition):
 
 import re
 
-emailregex = "[a-zA-Z0-9\._\-+]+@[a-zA-Z0-9\._\-]+.[a-zA-Z]+"
+emailregex = "[a-zA-Z0-9\._\-+=]+@[a-zA-Z0-9\._\-]+\.[a-zA-Z]+"
 
 def is_valid_email(s):
     r"""Checks if s is a valid email address.
