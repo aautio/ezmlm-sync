@@ -1,0 +1,140 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: aautio@gmail.com
+Received: by 10.204.102.7 with SMTP id e7cs60424bko;
+        Wed, 7 Sep 2011 23:09:28 -0700 (PDT)
+Received: by 10.204.136.154 with SMTP id r26mr164456bkt.327.1315462167727;
+        Wed, 07 Sep 2011 23:09:27 -0700 (PDT)
+Return-Path: <lista-return-@viitamaa.fi>
+Received: from mailgrid3-1.sigmatic.fi (mailgrid3-1.sigmatic.fi [80.69.161.242])
+        by mx.google.com with ESMTPS id k15si1798072bke.116.2011.09.07.23.09.26
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Wed, 07 Sep 2011 23:09:26 -0700 (PDT)
+Received-SPF: neutral (google.com: 80.69.161.242 is neither permitted nor denied by best guess record for domain of lista-return-@viitamaa.fi) client-ip=80.69.161.242;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 80.69.161.242 is neither permitted nor denied by best guess record for domain of lista-return-@viitamaa.fi) smtp.mail=lista-return-@viitamaa.fi
+Received: (qmail 9289 invoked by uid 64020); 8 Sep 2011 06:09:26 -0000
+Mailing-List: contact lista-help@viitamaa.fi; run by ezmlm
+List-Help: <mailto:lista-help@viitamaa.fi>
+List-Post: <mailto:lista@viitamaa.fi>
+List-Subscribe: <mailto:lista-subscribe@viitamaa.fi>
+Date: 8 Sep 2011 06:09:26 -0000
+Message-ID: <1315462166.9288.ezmlm@viitamaa.fi>
+From: lista-help@viitamaa.fi
+To: viitamaa@gmail.com
+Delivered-To: responder for lista@viitamaa.fi
+Received: (qmail 9281 invoked from network); 8 Sep 2011 06:09:25 -0000
+Received: from unknown (HELO mailgw1-3.sigmatic.fi) (80.69.161.54)
+  by mailgrid3-1.sigmatic.fi with SMTP; 8 Sep 2011 06:09:25 -0000
+Received: (qmail 2203 invoked from network); 8 Sep 2011 06:09:25 -0000
+Received: by simscan 1.4.0 ppid: 2200, pid: 2202, t: 0.0279s
+         scanners:none
+Received: from unknown (HELO mail-bw0-f43.google.com) (209.85.214.43)
+  by mail1.sigmatic.fi with (RC4-SHA encrypted) SMTP; 8 Sep 2011 06:09:25 -0000
+Received: by bkbzv15 with SMTP id zv15so409555bkb.2
+        for <lista-unsubscribe-viitamaa=gmail.com@viitamaa.fi>; Wed, 07 Sep 2011 23:09:25 -0700 (PDT)
+Received: by 10.204.8.13 with SMTP id f13mr160904bkf.331.1315462165150; Wed,
+ 07 Sep 2011 23:09:25 -0700 (PDT)
+Received: by 10.204.102.7 with HTTP; Wed, 7 Sep 2011 23:09:05 -0700 (PDT)
+MIME-Version: 1.0
+Content-type: text/plain; charset=us-ascii
+Reply-To: lista-vc.1315462166.jdgbaahdfpjjahnpjfhg-viitamaa=gmail.com@viitamaa.fi
+Subject: CONFIRM unsubscribe from lista@viitamaa.fi
+
+Hi! This is the ezmlm program. I'm managing the
+lista@viitamaa.fi mailing list.
+
+I'm working for my owner, who can be reached
+at lista-owner@viitamaa.fi.
+A request has been made to remove
+
+   viitamaa@gmail.com
+
+from the lista mailing list. If you agree, please send
+an empty reply to this address:
+
+   lista-vc.1315462166.jdgbaahdfpjjahnpjfhg-viitamaa=gmail.com@viitamaa.fi
+
+Usually, this happens when you just hit the "reply" button.
+If this does not work, simply copy the address and paste it into
+the "To:" field of a new message.
+
+or click here:
+	mailto:lista-vc.1315462166.jdgbaahdfpjjahnpjfhg-viitamaa=gmail.com@viitamaa.fi
+
+If you don't approve, simply ignore this message.
+
+Thank you for your help!
+
+
+--- Administrative commands for the lista list ---
+
+I can handle administrative requests automatically. Please
+do not send them to the list address! Instead, send
+your message to the correct command address:
+
+For help and a description of available commands, send a message to:
+   <lista-help@viitamaa.fi>
+
+To subscribe to the list, send a message to:
+   <lista-subscribe@viitamaa.fi>
+
+To remove your address from the list, just send a message to
+the address in the ``List-Unsubscribe'' header of any list
+message. If you haven't changed addresses since subscribing,
+you can also send a message to:
+   <lista-unsubscribe@viitamaa.fi>
+
+For addition or removal of addresses, I'll send a confirmation
+message to that address. When you receive it, simply reply to it
+to complete the transaction.
+
+If you need to get in touch with the human owner of this list,
+please send a message to:
+
+    <lista-owner@viitamaa.fi>
+
+Please include a FORWARDED list message with ALL HEADERS intact
+to make it easier to help you.
+
+--- Enclosed is a copy of the request I received.
+
+Return-Path: <aautio@gmail.com>
+Received: (qmail 9281 invoked from network); 8 Sep 2011 06:09:25 -0000
+Received: from unknown (HELO mailgw1-3.sigmatic.fi) (80.69.161.54)
+  by mailgrid3-1.sigmatic.fi with SMTP; 8 Sep 2011 06:09:25 -0000
+Received: (qmail 2203 invoked from network); 8 Sep 2011 06:09:25 -0000
+Received: by simscan 1.4.0 ppid: 2200, pid: 2202, t: 0.0279s
+         scanners:none
+Received: from unknown (HELO mail-bw0-f43.google.com) (209.85.214.43)
+  by mail1.sigmatic.fi with (RC4-SHA encrypted) SMTP; 8 Sep 2011 06:09:25 -0000
+X-Backend-Scan: 1
+Received: by bkbzv15 with SMTP id zv15so409555bkb.2
+        for <lista-unsubscribe-viitamaa=gmail.com@viitamaa.fi>; Wed, 07 Sep 2011 23:09:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=mime-version:from:date:message-id:subject:to:content-type;
+        bh=TF3dU7zyAExoZy9XNHJ3whLM0ksLnpi2cN+dKxjRUTc=;
+        b=ZAA1R4PbpAtIVnn280RPZA11ZML94Q/+PvHa+tMpyX8LIprwJJcFcGJ1cYnehNtzna
+         5zWC5m0bi32GaYxlvXa+p/PHtFYSf1C/QBnaXM4BoCq43a3d5Gm15RGRrHMhiKLbDexb
+         We0ENFv+ji0tR3J9EsuBUmNbqYFkXmfSuv6IQ=
+Received: by 10.204.8.13 with SMTP id f13mr160904bkf.331.1315462165150; Wed,
+ 07 Sep 2011 23:09:25 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.204.102.7 with HTTP; Wed, 7 Sep 2011 23:09:05 -0700 (PDT)
+From: Ari Autio <aautio@gmail.com>
+Date: Thu, 8 Sep 2011 09:09:05 +0300
+Message-ID: <CACyMS6vVEE09vi3qx5iQOKZ=DkNsv8PZhz7xw2Z3_2sL+dntJg@mail.gmail.com>
+Subject: 
+To: lista-unsubscribe-viitamaa=gmail.com@viitamaa.fi
+Content-Type: multipart/alternative; boundary=000e0cd30d7611bcf304ac67e75b
+
+--000e0cd30d7611bcf304ac67e75b
+Content-Type: text/plain; charset=ISO-8859-1
+
+
+
+--000e0cd30d7611bcf304ac67e75b
+Content-Type: text/html; charset=ISO-8859-1
+
+<br>
+
+--000e0cd30d7611bcf304ac67e75b--
