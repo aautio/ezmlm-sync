@@ -1,6 +1,7 @@
 import urllib2
 import utils
 import queue
+
 from settings import web_resource_url as url
 
 def poll():
