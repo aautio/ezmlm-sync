@@ -1,6 +1,6 @@
 import re
 import web_resource
-from utils import emailregex
+from utils import emailregex, diffs_of_lists
 
 listregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\n(" \
     + emailregex + ") mailing list\.\n\nI'm working for my " \
@@ -15,8 +15,11 @@ class ListEvent(object):
     def handle(self, email):
         list_emails = listregex.search(email).group(3).split()
         url_emails = web_resource.poll()
+        
         # compare and alter subscriptions
-        pass
+        sub, unsub = diffs_of_lists(url_emails, list_emails)
+        # TODO send emails
+
 
 cseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\n(" \
     + emailregex + ") mailing list\.\n\nI'm working for my " \

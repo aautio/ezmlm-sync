@@ -1,3 +1,13 @@
+def diffs_of_lists(a, b):
+    """Returns the diffs of two lists:
+
+    >>> diffs_of_lists([1, 3, 2], [3, 4])
+    ([1, 2], [4])
+    """
+    not_in_b = filter(lambda x: x not in b, a)
+    not_in_a = filter(lambda x: x not in a, b)
+    return (not_in_b, not_in_a)
+
 def split_with_condition(iter, condition):
     """Splits the iterable to two.
 
