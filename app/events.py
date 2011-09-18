@@ -18,7 +18,7 @@ class ListEvent(object):
         
         # compare and alter subscriptions
         sub, unsub = diffs_of_lists(url_emails, list_emails)
-        # TODO send emails
+        # TODO send email (1 is enough)
 
 
 cseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\n(" \

@@ -1,16 +1,16 @@
 import gmail
+import events
 import time
-import queue
-import sys
 
 def main():
-    username, password = sys.argv[1:]
-    
-    inbox = gmail.Inbox(username, password)
-
     while True:
-        for email in inbox.unread():
-            queue.publish('emails:unread', email)
+        for email in gmail.unread():
+            for event in events.events:
+                if event.matches(email):
+                    #event.handle(email)
+                    pass
+                else:
+                    print 'Email not understood!\n\n%s' % str(email)
 
         time.sleep(60) # 60 seconds
 
