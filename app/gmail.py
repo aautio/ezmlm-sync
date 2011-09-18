@@ -33,8 +33,7 @@ def unread():
         status, data = imap.fetch(msg, '(RFC822)')
 
         print 'Yielding fetched msg'
-        # TODO: return the raw data instead? is email needed?
-        yield email.message_from_string(data[0][1])
+        yield data[0][1]
 
     print 'No more unread emails'
     imap.close()

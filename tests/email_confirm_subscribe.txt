@@ -1,73 +1,74 @@
+                                                                                                                                                                                                                                                               
 Delivered-To: aautio@gmail.com
-Received: by 10.204.102.7 with SMTP id e7cs39457bko;
-        Wed, 7 Sep 2011 09:59:41 -0700 (PDT)
-Received: by 10.204.145.68 with SMTP id c4mr382816bkv.370.1315414781192;
-        Wed, 07 Sep 2011 09:59:41 -0700 (PDT)
+Received: by 10.204.123.72 with SMTP id o8cs163810bkr;
+        Sun, 18 Sep 2011 08:05:27 -0700 (PDT)
+Received: by 10.204.144.147 with SMTP id z19mr942658bku.142.1316358325872;
+        Sun, 18 Sep 2011 08:05:25 -0700 (PDT)
 Return-Path: <lista-return-@viitamaa.fi>
-Received: from mailgrid3-1.sigmatic.fi (mailgrid3-1.sigmatic.fi [80.69.161.242])
-        by mx.google.com with ESMTPS id i7si813304bke.151.2011.09.07.09.59.39
+Received: from mailgrid3-1.sigmatic.fi (mailgrid3-1.sigmatic.fi. [80.69.161.242])
+        by mx.google.com with ESMTPS id zx9si4602235bkb.66.2011.09.18.08.05.25
         (version=TLSv1/SSLv3 cipher=OTHER);
-        Wed, 07 Sep 2011 09:59:40 -0700 (PDT)
+        Sun, 18 Sep 2011 08:05:25 -0700 (PDT)
 Received-SPF: neutral (google.com: 80.69.161.242 is neither permitted nor denied by best guess record for domain of lista-return-@viitamaa.fi) client-ip=80.69.161.242;
 Authentication-Results: mx.google.com; spf=neutral (google.com: 80.69.161.242 is neither permitted nor denied by best guess record for domain of lista-return-@viitamaa.fi) smtp.mail=lista-return-@viitamaa.fi
-Received: (qmail 11271 invoked by uid 64020); 7 Sep 2011 16:59:39 -0000
+Received: (qmail 21137 invoked by uid 64020); 18 Sep 2011 15:05:25 -0000
 Mailing-List: contact lista-help@viitamaa.fi; run by ezmlm
 List-Help: <mailto:lista-help@viitamaa.fi>
 List-Post: <mailto:lista@viitamaa.fi>
 List-Subscribe: <mailto:lista-subscribe@viitamaa.fi>
-Date: 7 Sep 2011 16:59:39 -0000
-Message-ID: <1315414779.11270.ezmlm@viitamaa.fi>
+Date: 18 Sep 2011 15:05:25 -0000
+Message-ID: <1316358325.21136.ezmlm@viitamaa.fi>
 From: lista-help@viitamaa.fi
-To: aautio@gmail.com
+To: ari.autio@iki.fi
 Delivered-To: responder for lista@viitamaa.fi
-Received: (qmail 11259 invoked from network); 7 Sep 2011 16:59:38 -0000
+Received: (qmail 21129 invoked from network); 18 Sep 2011 15:05:24 -0000
 Received: from unknown (HELO mailgw1-3.sigmatic.fi) (80.69.161.54)
-  by mailgrid3-1.sigmatic.fi with SMTP; 7 Sep 2011 16:59:38 -0000
-Received: (qmail 22725 invoked from network); 7 Sep 2011 16:59:38 -0000
-Received: by simscan 1.4.0 ppid: 22721, pid: 22724, t: 0.0284s
+  by mailgrid3-1.sigmatic.fi with SMTP; 18 Sep 2011 15:05:24 -0000
+Received: (qmail 23499 invoked from network); 18 Sep 2011 15:05:24 -0000
+Received: by simscan 1.4.0 ppid: 23488, pid: 23498, t: 0.0323s
          scanners:none
-Received: from unknown (HELO mail-bw0-f43.google.com) (209.85.214.43)
-  by mail1.sigmatic.fi with (RC4-SHA encrypted) SMTP; 7 Sep 2011 16:59:38 -0000
-Received: by bkbzv15 with SMTP id zv15so434706bkb.2
-        for <lista-subscribe@viitamaa.fi>; Wed, 07 Sep 2011 09:59:37 -0700 (PDT)
-Received: by 10.204.3.28 with SMTP id 28mr4110872bkl.175.1315414777432; Wed,
- 07 Sep 2011 09:59:37 -0700 (PDT)
-Received: by 10.204.102.7 with HTTP; Wed, 7 Sep 2011 09:59:16 -0700 (PDT)
+Received: from unknown (HELO mail-fx0-f43.google.com) (209.85.161.43)
+  by mail1.sigmatic.fi with (RC4-SHA encrypted) SMTP; 18 Sep 2011 15:05:24 -0000
+Received: by fxh19 with SMTP id 19so4170163fxh.2
+        for <lista-subscribe-ari.autio=iki.fi@viitamaa.fi>; Sun, 18 Sep 2011 08:05:24 -0700 (PDT)
+Received: by 10.223.43.218 with SMTP id x26mr3269583fae.75.1316358324273;
+        Sun, 18 Sep 2011 08:05:24 -0700 (PDT)
+Received: from [127.0.0.1] (dsl-trebrasgw2-fe56f900-31.dhcp.inet.fi. [84.249.86.31])
+        by mx.google.com with ESMTPS id l8sm11095481fai.16.2011.09.18.08.05.23
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sun, 18 Sep 2011 08:05:23 -0700 (PDT)
 MIME-Version: 1.0
 Content-type: text/plain; charset=us-ascii
-Reply-To: lista-sc.1315414779.aebdcjkdooiikbpafjhe-aautio=gmail.com@viitamaa.fi
-Subject: confirm subscribe to lista@viitamaa.fi
+Reply-To: lista-tc.1316358325.ioopifbffkfhjpfhngpl-ari.autio=iki.fi@viitamaa.fi
+Subject: CONFIRM subscribe to lista@viitamaa.fi
 
 Hi! This is the ezmlm program. I'm managing the
 lista@viitamaa.fi mailing list.
 
 I'm working for my owner, who can be reached
 at lista-owner@viitamaa.fi.
+I respectfully request your permission to add
 
-To confirm that you would like
+   ari.autio@iki.fi
 
-   aautio@gmail.com
+to the subscribers of the lista mailing list. This request
+either came from you, or it has already been verified by
+the potential subscriber.
 
-added to the lista mailing list, please send
-an empty reply to this address:
+To confirm, please send an empty reply to this address:
 
-   lista-sc.1315414779.aebdcjkdooiikbpafjhe-aautio=gmail.com@viitamaa.fi
+   lista-tc.1316358325.ioopifbffkfhjpfhngpl-ari.autio=iki.fi@viitamaa.fi
 
 Usually, this happens when you just hit the "reply" button.
 If this does not work, simply copy the address and paste it into
 the "To:" field of a new message.
 
 or click here:
-	mailto:lista-sc.1315414779.aebdcjkdooiikbpafjhe-aautio=gmail.com@viitamaa.fi
+	mailto:lista-tc.1316358325.ioopifbffkfhjpfhngpl-ari.autio=iki.fi@viitamaa.fi
 
-This confirmation serves two purposes. First, it verifies that I am able
-to get mail through to you. Second, it protects you in case someone
-forges a subscription request in your name.
+If you don't approve, simply ignore this message.
 
-Some mail programs are broken and cannot handle long addresses. If you
-cannot reply to this request, instead send a message to
-<lista-request@viitamaa.fi> and put the
-entire address listed above into the "Subject:" line.
+Thank you for your help!
 
 
 --- Administrative commands for the lista list ---
@@ -103,46 +104,32 @@ to make it easier to help you.
 --- Enclosed is a copy of the request I received.
 
 Return-Path: <aautio@gmail.com>
-Received: (qmail 11259 invoked from network); 7 Sep 2011 16:59:38 -0000
+Received: (qmail 21129 invoked from network); 18 Sep 2011 15:05:24 -0000
 Received: from unknown (HELO mailgw1-3.sigmatic.fi) (80.69.161.54)
-  by mailgrid3-1.sigmatic.fi with SMTP; 7 Sep 2011 16:59:38 -0000
-Received: (qmail 22725 invoked from network); 7 Sep 2011 16:59:38 -0000
-Received: by simscan 1.4.0 ppid: 22721, pid: 22724, t: 0.0284s
+  by mailgrid3-1.sigmatic.fi with SMTP; 18 Sep 2011 15:05:24 -0000
+Received: (qmail 23499 invoked from network); 18 Sep 2011 15:05:24 -0000
+Received: by simscan 1.4.0 ppid: 23488, pid: 23498, t: 0.0323s
          scanners:none
-Received: from unknown (HELO mail-bw0-f43.google.com) (209.85.214.43)
-  by mail1.sigmatic.fi with (RC4-SHA encrypted) SMTP; 7 Sep 2011 16:59:38 -0000
+Received: from unknown (HELO mail-fx0-f43.google.com) (209.85.161.43)
+  by mail1.sigmatic.fi with (RC4-SHA encrypted) SMTP; 18 Sep 2011 15:05:24 -0000
 X-Backend-Scan: 1
-Received: by bkbzv15 with SMTP id zv15so434706bkb.2
-        for <lista-subscribe@viitamaa.fi>; Wed, 07 Sep 2011 09:59:37 -0700 (PDT)
+Received: by fxh19 with SMTP id 19so4170163fxh.2
+        for <lista-subscribe-ari.autio=iki.fi@viitamaa.fi>; Sun, 18 Sep 2011 08:05:24 -0700 (PDT)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
         d=gmail.com; s=gamma;
-        h=mime-version:sender:from:date:x-google-sender-auth:message-id
-         :subject:to:content-type;
-        bh=kRr5qK4zhU+z6aTD0i9+Ol1MkwoYj/g/LvA09jmhfSI=;
-        b=V7yJjoztzDe6wHQ0DZIJkZ56R3r8xadaEbS8VPrJAY7B7CzdK8NBP+JsuSs0NL/QGM
-         h1XAUGCeLNyw78IC7MW0wtjuGd+luzRoSIvJN+UVGzHHUpDBzNhht45n2/CHlRWUSPMf
-         8E6aZnJRX7jyJFMXUSDbUGScwVEnkcZRFLb2U=
-Received: by 10.204.3.28 with SMTP id 28mr4110872bkl.175.1315414777432; Wed,
- 07 Sep 2011 09:59:37 -0700 (PDT)
-MIME-Version: 1.0
-Sender: aautio@gmail.com
-Received: by 10.204.102.7 with HTTP; Wed, 7 Sep 2011 09:59:16 -0700 (PDT)
-From: Ari Autio <ari.autio@iki.fi>
-Date: Wed, 7 Sep 2011 19:59:16 +0300
-X-Google-Sender-Auth: 2n3skPJevIlEn-7A0Z7s_61Ynzk
-Message-ID: <CACyMS6u1XKctNX_t=Ma-P-kxkKFS2FqoLLuD+pqdVAnLYTHnEQ@mail.gmail.com>
-Subject: 
-To: lista-subscribe@viitamaa.fi
-Content-Type: multipart/alternative; boundary=0015174c3dd68a8c4004ac5cdeca
-
---0015174c3dd68a8c4004ac5cdeca
-Content-Type: text/plain; charset=ISO-8859-1
-
-
-
---0015174c3dd68a8c4004ac5cdeca
-Content-Type: text/html; charset=ISO-8859-1
-
-<br>
-
---0015174c3dd68a8c4004ac5cdeca--
+        h=message-id:date:sender:from;
+        bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+        b=MuejV5WGdSY56LMu4smcT5sxGj3ykn4yI0cjCtlQfzUeBpYEoBMTCDy6zsUqscGV9r
+         TW7qAdmRb/LxO562pdVvtfR057gsSzTaW9SxnKKsBdb44LOvVi33SC+ENrsqemeLAUx/
+         gWc4pkXecvPtawe7NiolrbFi+nVYI2tHB+yz0=
+Received: by 10.223.43.218 with SMTP id x26mr3269583fae.75.1316358324273;
+        Sun, 18 Sep 2011 08:05:24 -0700 (PDT)
+Return-Path: <aautio@gmail.com>
+Received: from [127.0.0.1] (dsl-trebrasgw2-fe56f900-31.dhcp.inet.fi. [84.249.86.31])
+        by mx.google.com with ESMTPS id l8sm11095481fai.16.2011.09.18.08.05.23
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sun, 18 Sep 2011 08:05:23 -0700 (PDT)
+Message-ID: <4e7608b3.0842df0a.0be4.49e7@mx.google.com>
+Date: Sun, 18 Sep 2011 08:05:23 -0700 (PDT)
+Sender: Ari Autio <aautio@gmail.com>
+From: ari.autio@iki.fi

@@ -2,31 +2,48 @@ import re
 import web_resource
 from utils import emailregex, diffs_of_lists
 
-listregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\n(" \
-    + emailregex + ") mailing list\.\n\nI'm working for my " \
-    + "owner, who can be reached\nat (" + emailregex + ")\.\n\n" \
-    + "Subscribers to this list are:\n\n" \
-    + "((?:" + emailregex + "\n)*)")
+from settings import ezmlm_listname as listname
+from settings import ezmlm_domain as domain
+
+import gmail
+
+listregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\r?\n(" \
+    + emailregex + ") mailing list\.\r?\n\r?\nI'm working for my " \
+    + "owner, who can be reached\r?\nat (" + emailregex + ")\.\r?\n\r?\n" \
+    + "Subscribers to this list are:\r?\n\r?\n" \
+    + "((?:" + emailregex + "\r?\n)*)")
 
 class ListEvent(object):
     def matches(self, email):
         return listregex.search(email) != None
 
     def handle(self, email):
+        # compare and alter subscriptions
         list_emails = listregex.search(email).group(3).split()
         url_emails = web_resource.poll()
         
-        # compare and alter subscriptions
         sub, unsub = diffs_of_lists(url_emails, list_emails)
-        # TODO send email (1 is enough)
+
+        sub = map(self.to_subscribe_cmd, sub)
+        unsub = map(self.to_unsubscribe_cmd, unsub)
+        
+        gmail.send(sub + unsub)
+        
+    def to_subscribe_cmd(self, email):
+        return "%s-subscribe-%s@%s" % (listname, email.replace('@', '='), domain)
+        
+    def to_unsubscribe_cmd(self, email):
+        return "%s-unsubscribe-%s@%s" % (listname, email.replace('@', '='), domain)
 
 
-cseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\n(" \
-    + emailregex + ") mailing list\.\n\nI'm working for my " \
-    + "owner, who can be reached\nat (" + emailregex + ")\.\n\n" \
-    + "To confirm that you would like\n\n   (" + emailregex + ")\n\n" \
-    + "added to the .* mailing list, please send\nan empty reply " \
-    + "to this address:\n\n   (" + emailregex + ")")
+cseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\r?\n(" \
+    + emailregex + ") mailing list\.\r?\n\r?\nI'm working for my " \
+    + "owner, who can be reached\r?\nat (" + emailregex + ")\.\r?\n" \
+    + "I respectfully request your permission to add\r?\n\r?\n   (" \
+    + emailregex + ")\r?\n\r?\nto the subscribers of the .* mailing list. " \
+    + "This request\r?\neither came from you, or it has already been verified " \
+    + "by\r?\nthe potential subscriber.\r?\n\r?\nTo confirm, please send an " \
+    + "empty reply to this address:\r?\n\r?\n   (" + emailregex + ")")
                          
 class ConfirmSubscribeEvent(object):
     def matches(self, email):
@@ -35,14 +52,14 @@ class ConfirmSubscribeEvent(object):
     def handle(self, email):
         # respond with confirmation email
         confirm_to = cseregex.search(email).group(4)
-        # send email to confirm_to
+        gmail.send(confirm_to)
 
-cuseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\n(" \
-    + emailregex + ") mailing list\.\n\nI'm working for my " \
-    + "owner, who can be reached\nat (" + emailregex + ")\.\n" \
-    + "A request has been made to remove\n\n   (" + emailregex + ")\n\n" \
-    + "from the .* mailing list\. If you agree, please send\nan empty reply " \
-    + "to this address:\n\n   (" + emailregex + ")")
+cuseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\r?\n(" \
+    + emailregex + ") mailing list\.\r?\n\r?\nI'm working for my " \
+    + "owner, who can be reached\r?\nat (" + emailregex + ")\.\r?\n" \
+    + "A request has been made to remove\r?\n\r?\n   (" + emailregex + ")\r?\n\r?\n" \
+    + "from the .* mailing list\. If you agree, please send\r?\nan empty reply " \
+    + "to this address:\r?\n\r?\n   (" + emailregex + ")")
 
 class ConfirmUnsubscribeEvent(object):
     def matches(self, email):
@@ -51,6 +68,6 @@ class ConfirmUnsubscribeEvent(object):
     def handle(self, email):
         # respond with confirmation email
         confirm_to = cuseregex.search(email).group(4)
-        pass
+        gmail.send(confirm_to)
     
 events = (ListEvent(), ConfirmSubscribeEvent(), ConfirmUnsubscribeEvent())

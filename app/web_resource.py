@@ -1,10 +1,12 @@
 import urllib2
 import utils
-import queue
 
 from settings import web_resource_url as url
 
 def poll():
+    if True:
+        return ['aautio@gmail.com', 'viitamaa@gmail.com', 'ari.autio@iki.fi']
+    
     emails, errors = fetch_and_split(url)
 
     if errors:
