@@ -1,17 +1,21 @@
 import imaplib
 import smtplib
-import email
+from email.mime.text import MIMEText
 
 from app.settings import gmail_username as username
 from app.settings import gmail_password as password
 
-def send(to_addrs, msg = ""):
+def send(to_addrs, body = ""):
     print 'Sending mail to %s' % str(to_addrs)
     smtp = smtplib.SMTP('smtp.gmail.com:587')
     smtp.starttls()
     smtp.login(username, password)
-    
-    smtp.sendmail(username, to_addrs, str(msg))
+
+    msg = MIMEText(body)
+    msg['From'] = username
+    msg['To'] = to_addrs if isinstance(to_addrs, str) else ", ".join(to_addrs)
+
+    smtp.sendmail(username, to_addrs, msg.as_string())
     
     print 'Mail sent'
     smtp.quit()
