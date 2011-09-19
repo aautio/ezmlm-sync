@@ -6,8 +6,9 @@ def main():
     while True:
         for email in gmail.unread():
             consume(email)
-            
-        time.sleep(10) # 60 seconds
+
+        # check inbox every 10 minutes
+        time.sleep(60 * 10)
 
 def consume(email):
     for e in emails.types:
