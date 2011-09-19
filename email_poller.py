@@ -1,5 +1,5 @@
 import app.gmail as gmail
-import app.events as events
+import app.emails as emails
 import time
 
 def main():
@@ -10,9 +10,9 @@ def main():
         time.sleep(10) # 60 seconds
 
 def consume(email):
-    for event in events.events:
-        if event.matches(email):
-            event.handle(email)
+    for e in emails.types:
+        if e.matches(email):
+            e.handle(email)
             return
     
     print 'Email not understood!\n\n%s' % email

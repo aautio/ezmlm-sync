@@ -13,7 +13,7 @@ listregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\r?\n(" 
     + "Subscribers to this list are:\r?\n\r?\n" \
     + "((?:" + emailregex + "\r?\n)*)")
 
-class ListEvent(object):
+class ListEmail(object):
     def matches(self, email):
         return listregex.search(email) != None
 
@@ -45,7 +45,7 @@ cseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\r?\n(" \
     + "by\r?\nthe potential subscriber.\r?\n\r?\nTo confirm, please send an " \
     + "empty reply to this address:\r?\n\r?\n   (" + emailregex + ")")
                          
-class ConfirmSubscribeEvent(object):
+class ConfirmSubscribeEmail(object):
     def matches(self, email):
         return cseregex.search(email) != None
 
@@ -61,7 +61,7 @@ cuseregex = re.compile("Hi! This is the ezmlm program\. I'm managing the\r?\n(" 
     + "from the .* mailing list\. If you agree, please send\r?\nan empty reply " \
     + "to this address:\r?\n\r?\n   (" + emailregex + ")")
 
-class ConfirmUnsubscribeEvent(object):
+class ConfirmUnsubscribeEmail(object):
     def matches(self, email):
         return cuseregex.search(email) != None
 
@@ -70,4 +70,4 @@ class ConfirmUnsubscribeEvent(object):
         confirm_to = cuseregex.search(email).group(4)
         gmail.send(confirm_to)
     
-events = (ListEvent(), ConfirmSubscribeEvent(), ConfirmUnsubscribeEvent())
+types = (ListEmail(), ConfirmSubscribeEmail(), ConfirmUnsubscribeEmail())

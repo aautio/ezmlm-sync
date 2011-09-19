@@ -1,3 +1,3 @@
-from tests import event_matches
+from tests import emails
 
-event_matches.run()
+emails.run()
