@@ -9,9 +9,7 @@ from app.settings import *
 
 def create_marker_file(filename):
     f = open(filename, 'w')
-    f.write("email_poller.py is running. " \
-            + "You can shut it down by deleting this file. " \
-            + "The shutdown sequence will take a few minutes.")
+    f.write("check the sources to find out what to do.")
     f.close()
 
 def should_continue(filename):
@@ -38,7 +36,7 @@ def consume(email):
     print 'Email not understood!\n\n%s' % email        
 
 def main():
-    filename = "keepalive.txt"
+    filename = "delete_to_shutdown.txt"
     create_marker_file(filename)
     print "Starting poller threads. Shut it down by deleting %s" % filename
 
