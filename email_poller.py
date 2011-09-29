@@ -1,14 +1,15 @@
 import app.gmail as gmail
 import app.emails as emails
-import time
 
-def main():
-    while True:
-        for email in gmail.unread():
-            consume(email)
+from app.sleepy_thread import *
+from app.settings import *
 
-        # check inbox every 10 minutes
-        time.sleep(60 * 10)
+def order_list():
+    gmail.send(ezmlm_listname + "-list@" + ezmlm_domain)
+
+def check_inbox():
+    for email in gmail.unread():
+        consume(email)
 
 def consume(email):
     for e in emails.types:
@@ -16,8 +17,15 @@ def consume(email):
             e.handle(email)
             return
     
-    print 'Email not understood!\n\n%s' % email
-    
+    gmail.send(error_mail, 'Email not understood!\n\n%s' % email)
+
+def main():
+    filename = "delete_to_shutdown.txt"
+    create_marker_file(filename)
+
+    start_thread(check_inbox, filename, 30 * 60)
+    start_thread(order_list, filename, 2 * 60 * 60)
+
 
 if __name__ == "__main__":
     main()
