@@ -8,6 +8,7 @@ from app.settings import gmail_password as password
 def send(to_addrs, body = ""):
     print 'Sending mail to %s' % str(to_addrs)
     smtp = smtplib.SMTP('smtp.gmail.com:587')
+    smtp.ehlo()
     smtp.starttls()
     smtp.login(username, password)
 
