@@ -26,8 +26,9 @@ class ListEmail(object):
 
         sub = map(self.to_subscribe_cmd, sub)
         unsub = map(self.to_unsubscribe_cmd, unsub)
-        
-        gmail.send(sub + unsub)
+
+        if sub + unsub:
+            gmail.send(sub + unsub)
         
     def to_subscribe_cmd(self, email):
         return "%s-subscribe-%s@%s" % (listname, email.replace('@', '='), domain)
