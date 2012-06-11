@@ -20,10 +20,7 @@ def split_with_condition(iter, condition):
     """
     matches, misses = [], []
     for i in iter:
-        if condition(i):
-            matches.append(i)
-        else:
-            misses.append(i)
+        (matches if condition(i) else misses).append(i)
     return matches, misses
 
 
