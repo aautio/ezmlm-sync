@@ -2,11 +2,11 @@ import urllib2
 import utils
 import gmail
 
-from settings import web_resource_url as url
+from settings import web_resource_urls as urls
 from settings import error_email
 
-def poll():
-    emails, errors = fetch_and_split(url)
+def poll(listname):
+    emails, errors = fetch_and_split(urls[listname])
 
     if errors:
         gmail.send(error_email, "Erronous emails detected: %s" % str(errors))

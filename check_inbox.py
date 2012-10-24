@@ -1,7 +1,7 @@
 import app.gmail as gmail
 import app.emails as emails
 
-from app.settings import *
+from app.settings import error_email
 
 def check_inbox():
     for email in gmail.unread():
@@ -12,8 +12,8 @@ def consume(email):
         if e.matches(email):
             e.handle(email)
             return
-    
-    gmail.send(error_mail, 'Email not understood!\n\n%s' % email)
+
+    gmail.send(error_email, 'Email not understood!\n\n%s' % email)
 
 def main():
     check_inbox()
